@@ -1,0 +1,72 @@
+html {
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.container {
+  min-height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.box {
+    font-size: 1.25rem;
+    background-color: #c8dadf;
+    position: relative;
+    padding: 26% 33%;
+}
+
+.box__dragndrop,
+.box__uploading,
+.box__success,
+.box__error {
+  display: none;
+}
+
+.box.has-advanced-upload {
+  padding: in;
+  margin: 0;
+}
+.box.has-advanced-upload .box__dragndrop {
+  display: inline;
+  margin: 0;
+}
+
+.box.is-dragover {
+  background-color: #80a6ab;
+}
+
+.box.is-uploading .box__input {
+  visibility: none;
+  margin: 0;
+}
+.box.is-uploading .box__uploading {
+  display: block;
+  margin: 0;
+}
+
+.box__input {
+  position: absolute;
+  margin: 0;
+}
+
+.file {
+  height: 100px;
+  width: 75px;
+  position: absolute;
+}
+
+.thumbnail {
+  max-width: 100px;
+  max-height: 75px;
+  padding: 50%;
+  margin: 0;
+}
